@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8kq1e4b01hua"]
+
+[ext_resource type="Texture2D" uid="uid://ngg67xmctmc5" path="res://art/bkg_star.png" id="1_trh53"]
+[ext_resource type="Script" path="res://background_stars.gd" id="2_kabm7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mp88s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_trh53")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Background Stars" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_mp88s")
+script = ExtResource("2_kabm7")
